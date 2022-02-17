@@ -42,4 +42,32 @@ public class ButtonScript : MonoBehaviour
             gameObject.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = "Cost:" + cost.ToString();
         }
     }
+
+    public void unlockMinigame1()
+    {
+        if (GM.score >= cost)
+        {
+            GM.score -= cost;
+            GM.minigame1 = true;
+            Destroy(this.gameObject);
+        }
+    }
+    public void unlockMinigame2()
+    {
+        if (GM.score >= cost)
+        {
+            GM.score -= cost;
+            GM.minigame2 = true;
+            Destroy(this.gameObject);
+        }
+    }
+    public void unlockMinigame3()
+    {
+        if (GM.score >= cost)
+        {
+            GM.score -= cost;
+            GM.minigame3 = true;
+            Destroy(this.gameObject);
+        }
+    }
 }

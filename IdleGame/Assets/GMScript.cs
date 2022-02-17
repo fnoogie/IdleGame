@@ -9,6 +9,7 @@ public class GMScript : MonoBehaviour
     [HideInInspector]
     public float score = 0f, SPS = 0f;
     public TextMeshProUGUI scoreText, SPSText;
+    public bool minigame1 = false, minigame2 = false, minigame3 = false;
 
     // Start is called before the first frame update
     void Start()
