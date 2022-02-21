@@ -48,6 +48,9 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\GMScript.cs" />
+     <Compile Include="Assets\Pong\PlayerPaddle.cs" />
+     <Compile Include="Assets\Pong\PongBallScr.cs" />
+     <Compile Include="Assets\Pong\EnemyPaddleScr.cs" />
      <Compile Include="Assets\ButtonScript.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

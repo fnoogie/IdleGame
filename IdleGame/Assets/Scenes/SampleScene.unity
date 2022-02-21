@@ -571,6 +571,7 @@ GameObject:
   - component: {fileID: 200428762}
   - component: {fileID: 200428761}
   - component: {fileID: 200428760}
+  - component: {fileID: 200428763}
   m_Layer: 0
   m_Name: Right
   m_TagString: Untagged
@@ -690,6 +691,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &200428763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200428758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6884c36392ee0c34593fadc2b1f74f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &211922750
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,6 +760,7 @@ MonoBehaviour:
   cost: 5000
   costScale: 1.5
   spsGain: 10
+  minigameNumber: 0
 --- !u!114 &211922753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,7 +959,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &292898853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1163,6 +1177,7 @@ MonoBehaviour:
   cost: 100
   costScale: 1.15
   spsGain: 1
+  minigameNumber: 0
 --- !u!114 &348283172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1312,6 +1327,7 @@ MonoBehaviour:
   cost: -1
   costScale: 0
   spsGain: 0
+  minigameNumber: 0
 --- !u!114 &400619090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1463,6 +1479,7 @@ MonoBehaviour:
   cost: 500
   costScale: 0
   spsGain: 0
+  minigameNumber: 0
 --- !u!114 &401321062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2052,6 +2069,7 @@ GameObject:
   - component: {fileID: 798754281}
   - component: {fileID: 798754280}
   - component: {fileID: 798754279}
+  - component: {fileID: 798754282}
   m_Layer: 0
   m_Name: Left
   m_TagString: Untagged
@@ -2171,6 +2189,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &798754282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798754277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6884c36392ee0c34593fadc2b1f74f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &851881317
 GameObject:
   m_ObjectHideFlags: 0
@@ -3134,6 +3164,7 @@ MonoBehaviour:
   cost: 1000
   costScale: 1.25
   spsGain: 5
+  minigameNumber: 0
 --- !u!114 &1239490803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3691,6 +3722,7 @@ MonoBehaviour:
   cost: 15
   costScale: 1.05
   spsGain: 0.1
+  minigameNumber: 0
 --- !u!114 &1429451411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4059,7 +4091,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!1 &1556992883
 GameObject:
   m_ObjectHideFlags: 0
@@ -4893,3 +4925,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2e86c52adc7b3b4ebb2373e8efdff03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballSpeed: 3

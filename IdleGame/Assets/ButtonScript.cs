@@ -10,7 +10,7 @@ public class ButtonScript : MonoBehaviour
     public float costScale;
     public float spsGain;
     int quantity = 0;
-
+    public int minigameNumber = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +50,26 @@ public class ButtonScript : MonoBehaviour
             GM.score -= cost;
             GM.minigame1 = true;
             Destroy(this.gameObject);
+
+            switch(minigameNumber)
+            {
+                case 1:
+                    {
+                        GM.minigame1 = true;
+                        break;
+                    }
+                case 2:
+                    {
+                        GM.minigame2 = true;
+                        break;
+                    }
+                case 3:
+                    {
+                        GM.minigame3 = true;
+                        break;
+                    }
+            }
+
         }
     }
     public void unlockMinigame2()
