@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerPaddle : MonoBehaviour
 {
+    float paddleMovement = 0.005f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,11 +16,11 @@ public class PlayerPaddle : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.W))
         {
-            gameObject.transform.position += new Vector3(0f, 0.001f, 0f);
+            gameObject.transform.position += new Vector3(0f, paddleMovement, 0f);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            gameObject.transform.position -= new Vector3(0f, 0.001f, 0f);
+            gameObject.transform.position -= new Vector3(0f, paddleMovement, 0f);
         }
     }
 
@@ -28,9 +29,9 @@ public class PlayerPaddle : MonoBehaviour
         if(col.gameObject.transform.parent.gameObject.name == "Walls")
         {
             if (col.gameObject.name == "Up")
-                gameObject.transform.position -= new Vector3(0f, 0.002f, 0f);
+                gameObject.transform.position -= new Vector3(0f, paddleMovement + .001f, 0f);
             else if (col.gameObject.name == "Down")
-                gameObject.transform.position += new Vector3(0f, 0.002f, 0f);
+                gameObject.transform.position += new Vector3(0f, paddleMovement + .001f, 0f);
         }
     }
 

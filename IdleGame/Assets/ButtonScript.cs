@@ -49,27 +49,8 @@ public class ButtonScript : MonoBehaviour
         {
             GM.score -= cost;
             GM.minigame1 = true;
+            GM.startPong();
             Destroy(this.gameObject);
-
-            switch(minigameNumber)
-            {
-                case 1:
-                    {
-                        GM.minigame1 = true;
-                        break;
-                    }
-                case 2:
-                    {
-                        GM.minigame2 = true;
-                        break;
-                    }
-                case 3:
-                    {
-                        GM.minigame3 = true;
-                        break;
-                    }
-            }
-
         }
     }
     public void unlockMinigame2()
