@@ -59,6 +59,7 @@ public class ButtonScript : MonoBehaviour
         {
             GM.score -= cost;
             GM.minigame2 = true;
+            GM.resetRunner();
             Destroy(this.gameObject);
         }
     }
