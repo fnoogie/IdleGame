@@ -77,7 +77,7 @@ public class GMScript : MonoBehaviour
     public void scoreRunner()
     {
         if(minigame2)
-            score += (int)runnerStartTime / 2f;
+            score += ((int)runnerStartTime / 2f) * 5;
     }
     public void spawnNewRunnerSegment()
     {
